@@ -145,7 +145,7 @@ end
 ```html
 # views/owners/new.erb
 <% @pets.each do |pet| %>
-  <input type="checkbox" name="owner[pet_ids][]" id="<%= pet.id %>" value="<%= pet.id %>"><%= pet.name %><br>
+  <input type="checkbox" name="owner[pet_ids][]" id="<%= pet.id %>" value="<%= pet.id %>"><%= pet.name %></input><br>
 <% end %>
 ```
 
@@ -492,3 +492,6 @@ the user to select a new owner or create a new owner. Note that if a new owner
 is created it would override any existing owner that is selected.
 
 Make sure you run the tests to check your work.
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/sinatra-complex-forms-associations'>Sinatra Complex Forms Associations</a> on Learn.co and start learning to code for free.</p>
+
